@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person\DTOs\PersonDto.cs" />
+    <Compile Include="Person\IPersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ST.Service.Base\ST.Service.Base.csproj">
+      <Project>{D8414C1B-0762-4782-AEE1-F15935F640FE}</Project>
+      <Name>ST.Service.Base</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

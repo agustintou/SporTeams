@@ -41,7 +41,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person\PersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ST.Domain.Base\ST.Domain.Base.csproj">
+      <Project>{727171b8-ef4a-4e47-9e2d-70b3282ecdce}</Project>
+      <Name>ST.Domain.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ST.Domain.Repository\ST.Domain.Repository.csproj">
+      <Project>{7BA7EB0F-97DD-46A4-A9CF-651876DFF20B}</Project>
+      <Name>ST.Domain.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ST.Domain\ST.Domain.csproj">
+      <Project>{bf43bd84-3d17-4021-b2d7-1d08813fa214}</Project>
+      <Name>ST.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ST.IService\ST.IService.csproj">
+      <Project>{4D4F1999-6E41-42EA-ADC5-E0B52EDB5CCF}</Project>
+      <Name>ST.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ST.Repository.Base\ST.Repository.Base.csproj">
+      <Project>{b1cad153-57ef-4e9c-8dc6-227812dc5def}</Project>
+      <Name>ST.Repository.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ST.Repository\ST.Repository.csproj">
+      <Project>{dbe33fa5-70bb-430c-837b-7cdb3e2a2b68}</Project>
+      <Name>ST.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ST.Service.Base\ST.Service.Base.csproj">
+      <Project>{d8414c1b-0762-4782-aee1-f15935f640fe}</Project>
+      <Name>ST.Service.Base</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

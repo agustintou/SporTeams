@@ -46,6 +46,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sport\DTOs\SportDto.cs" />
     <Compile Include="Sport\ISportService.cs" />
+    <Compile Include="Team\DTOs\TeamDto.cs" />
+    <Compile Include="Team\ITeamService.cs" />
     <Compile Include="User\DTOs\UserDto.cs" />
     <Compile Include="User\IUserService.cs" />
   </ItemGroup>

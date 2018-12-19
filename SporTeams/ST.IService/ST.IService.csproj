@@ -44,6 +44,8 @@
     <Compile Include="Person\DTOs\PersonDto.cs" />
     <Compile Include="Person\IPersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sport\DTOs\SportDto.cs" />
+    <Compile Include="Sport\ISportService.cs" />
     <Compile Include="User\DTOs\UserDto.cs" />
     <Compile Include="User\IUserService.cs" />
   </ItemGroup>

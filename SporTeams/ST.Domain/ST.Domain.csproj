@@ -49,8 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Person.cs" />
+    <Compile Include="Entities\Sport.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Metadatas\IPerson.cs" />
+    <Compile Include="Metadatas\ISport.cs" />
     <Compile Include="Metadatas\IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

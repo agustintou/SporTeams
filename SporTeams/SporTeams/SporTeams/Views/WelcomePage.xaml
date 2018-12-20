@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SporTeams.Views.WelcomePage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout
+            BindingContext="{Binding WelcomeVM}">
+            
+            <Grid
+                RowSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <!-- IMAGE -->
+                <Image
+                    Aspect="AspectFill"
+                    Grid.Row="0"
+                    Source="futbol.png"/>
+                
+                <!-- CLOSE -->
+                <StackLayout
+                    Padding="12">
+                    <Image
+                        HeightRequest="25"
+                        HorizontalOptions="EndAndExpand"
+                        Source="ic_close_white.png"
+                        WidthRequest="25">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding CommandClose}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+                
+                <!-- TITLE -->
+                <StackLayout
+                    Padding="24,50">
+                    <Label
+                        Font="25"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="SporTeams"
+                        TextColor="White"/>
+
+                </StackLayout>
+
+                <StackLayout
+                    Padding="24"
+                    VerticalOptions="EndAndExpand">
+
+                    <!-- LOG IN -->
+                    <Button
+                        BackgroundColor="{StaticResource Primary}"
+                        CornerRadius="20"
+                        Command="{Binding CommandLogin}"
+                        Grid.Row="1"
+                        Text="Iniciar sesion"
+                        TextColor="{StaticResource Secundary}"
+                        Margin="0,0,0,10"
+                        VerticalOptions="End"/>
+
+                    <!-- REGISTER -->
+                    <Button
+                        BackgroundColor="{StaticResource Secundary}"
+                        CornerRadius="20"
+                        Command="{Binding CommandRegister}"
+                        Grid.Row="2"
+                        Text="Registrarse"
+                        TextColor="{StaticResource Primary}"
+                        Margin="0,0,0,10"
+                        VerticalOptions="End"/>
+                </StackLayout>
+                
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

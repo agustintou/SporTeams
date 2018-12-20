@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infra="clr-namespace:SporTeams.Infrastructure"
+             x:Class="SporTeams.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <!-- LOCATOR -->
+            <infra:InstanceLocator x:Key="Locator"/>
+            
+            <!-- COLORS -->
+            <Color x:Key="Primary">#294936</Color>
+            <Color x:Key="Secundary">#FFF</Color>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
